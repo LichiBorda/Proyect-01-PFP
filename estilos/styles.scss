@@ -207,6 +207,11 @@
 
 // SECCION PRINCIPAL VERSION TABLET - IPAD
 @media screen and (min-width:577px) and (max-width: 991px){
+  
+  .imagen_s{
+    margin-left: 0;
+    margin-top: -20%;
+  }
 
   #particles-js{
    
