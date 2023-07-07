@@ -3,17 +3,37 @@
     box-sizing: border-box;
 }
 
-//SECCION PRINCIPAL VERSION DESKTOP
-
-//color de fondo
+.container-fluid{
+  padding: 0 !important;
+  
+}
+.separador{
+  margin-bottom: -1px;
+}
+//navbar color y hover
 .bg-custom{
-    background-color: rgb(1, 1, 10);
+    background-color: rgb(2, 2, 36);
 }
 
 .navbar-nav .nav-link:hover {
   background-color: blue !important;
 }
 
+
+//!VERSION DESKTOP!
+    
+
+//SECCION PRINCIPAL 
+
+//Estilos del contenedor titulos imagenes etc
+.contenedor-inicio2{
+
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  margin-left: 0 !important;
+  padding-top: 5%;
+} 
 .titulo1{
     padding-left: 20%;
     padding-top: 25%;
@@ -26,10 +46,7 @@
     
 }
 
-.contenedor-inicio{
-   z-index: 2;
-   position: absolute;
-}
+
 
 .mobile-error {
     padding-left: 29%;
@@ -59,50 +76,76 @@
     left:10px;
   }
 
-  //estilo del fondo
-  #particles-js{
-    z-index: -1;
-    background-color: rgb(5, 5, 5);
-    
-    width: 100%;
-   height: 100vh;
-   
-  }
+ //contenedor imagen
+ .imagen_conteiner{
+  margin-left: 0px;
+ }
+
  //imagen carnet
 .imagen_s{
   width: 360px;
   height: 440px;
   border-radius: 50%;
-  
+  margin-top: 10%;
+  margin-left: 20%;
   border: 3px solid;
 }
 
-.bg_sobre_mi{
-  
+
+.contenedor-habilidades{
+  background-color: transparent;
 }
 
 
+.centrado-responsive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0rem;
+  margin-top: 20px;
+  max-height: 5rem;
+   width: 9rem;
+}
+
+.text_aboutme{
+  font-size: 1.2rem;
+}
+
+
+.btn-blue{
+  background-color: rgb(3, 3, 180) !important; 
+  color: white !important;
+}
 //SECCION PRINCIPAL VERSION MOBILE
 @media screen and (min-width:0px) and (max-width: 576px) {
 
-  #particles-js{
-   
-    height: 50vh;
-    
-   }
+  //seccion inicial
+  .contenedor-inicio2{
 
+   
+    width: 100%;
+    height: 70vh;
+    margin-left: 0 !important;
+    
+  } 
+
+  .imagen_conteiner {
+  
+    text-align: center;
+      
+    }
 
     .imagen_s{
-     width: 200px;
-     height: 240px;
+     width: 240px;
+     height: 280px;
      border-radius: 50%;
-     margin: 0px;
-     padding: 0px;
+     margin-top: -100px;
+     margin-left: 0;
     }
 
     .titulo1{
         font-size: 2rem;
-        padding-left: 15%;
+        padding-left: 13%;
         padding-top: 10%;
         color: white;
 
@@ -110,26 +153,54 @@
     
     .titulo2{
         font-size: 1.7rem;
-        padding-left: 15%;
+        padding-left: 13%;
         color: white;
         
     }
   
     .mobile-error {
-        padding-left: 14%;
+        padding-left: 11%;
         display:inline-block;
         width: 400px;
       }
 
      .bug {
-        padding-left: 14.5%;
+        padding-left: 13%;
         margin-bottom: -100px;
      } 
 
-     .imagen_conteiner {
-     text-align: center;
-    
-       
+     //seccion about me 
+
+     .img-2{
+      width: 80%;
+     }
+     
+     //ajuste de imagenes de carrusel de skilss
+     .html-img{
+     
+      padding-top: 20px;
+      padding-bottom: 20px;
+      
+     }
+     .css-img{
+      padding-top: 30px;
+      padding-bottom: 30px;
+     }
+
+     .js-img{
+      padding-top: 30px;
+      padding-bottom: 30px;
+     }
+     
+     .bs-img{
+      padding-top: 30px;
+      padding-bottom: 30px;
+     }
+     .sass-img{
+      
+     }
+     .centrado-responsive{
+      margin-top: 40px;
      }
 }
 
@@ -168,7 +239,36 @@
         
       }
 
-}
+      .html-img{
+     
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+       }
+       .css-img{
+        padding-top: 30px;
+        padding-bottom: 30px;
+       }
+  
+       .js-img{
+        padding-top: 30px;
+        padding-bottom: 30px;
+       }
+       
+       .bs-img{
+        padding-top: 30px;
+        padding-bottom: 30px;
+       }
+       .github-img{
+        width: 15rem;
+        height: 16rem;
+       }
+       .centrado-responsive{
+        margin-top: 120px;
+       }
+  }
+
+
 
 
 @media screen and (min-width:992px) and (max-width: 2000px){
@@ -178,13 +278,7 @@
     
  } 
 
- .imagen_s {
-  margin-top: 30px;
-  margin-left: 50px;
-  
-  
-    
-  }
+ 
 
   .imagen-aboutme{
   padding-left: 20px;
@@ -223,23 +317,3 @@
 
 
 
-#btn-mas-info {
-  
-  animation: infiniteBounce 2s infinite;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@keyframes infiniteBounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-
-  }
