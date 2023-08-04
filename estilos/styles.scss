@@ -119,6 +119,10 @@
 //SECCION PRINCIPAL VERSION MOBILE
 @media screen and (min-width:0px) and (max-width: 576px) {
 
+.navbar-position{
+  --bs-navbar-brand-margin-end: 0rem;
+}
+
   //seccion inicial
   .contenedor-inicio2{
 
